@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product</title>
+ <link rel="icon" href="Image/logos.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="brand">
+    <img src="Image/logos.png" alt="Shop Logo">
+    <span class="shop-name">Benzo Uailili Shop</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="product.html" class="active">Products</a></li>
+    <li><a href="about us.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="addtocart.html" id="cartLink">
+    🛒 Cart <span id="cartCount" class="cart-badge">0</span>
+  </a>
+</li>
+    
+  </ul>
+</nav>
+
+<!-- SEARCH BAR -->
+<section class="product-search">
+  <input type="text" id="searchInput" placeholder="Search product..." onkeyup="searchProduct()">
+</section>
+
+<!-- ===== BAGS ===== -->
+<h2 class="category-title moving-text">BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     BAGS - COACH     </h2>
+<section class="product-grid">
+
+  <div class="product" data-name="Coach iconic Tabby bag" data-description="Coach, the iconic New York-based fashion house founded in 1941, has joined the Jules B brands list, bringing luxury leather goods known for quality and timeless design." data-price="120">
+    <img src="Image/bags/b1.jpeg" onclick="openModal(this)">
+    <h3>Coach iconic Tabby bag</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Coach Town Tote bag" data-description="Timeless elegance of Coach handbags, marrying functionality with luxury." data-price="240">
+    <img src="Image/bags/b2.jpeg" onclick="openModal(this)">
+    <h3>Coach Town Tote</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Coach Teri Shoulder bag" data-description="Our Teri Shoulder Bag has a '90s-inspired silhouette and comes in many shades to match your personal style." data-price="120">
+    <img src="Image/bags/b3.jpeg" onclick="openModal(this)">
+    <h3>Coach Teri Shoulder bag</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Coach Outlet Lewis bag" data-description="Timeless with a twist, sleek and spacious design with buttery soft leather." data-price="140">
+    <img src="Image/bags/b4.jpeg" onclick="openModal(this)">
+    <h3>Coach Outlet Lewis</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Adidas Classic badge sport bag" data-description="A classic backpack with 3-Stripes style, durable build and multiple compartments." data-price="70">
+    <img src="Image/bags/b5.jpeg" onclick="openModal(this)">
+    <h3>Adidas sport backpack</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Crossbody bag" data-description="Stylish and durable crossbody bag, perfect for everyday use." data-price="40">
+    <img src="Image/bags/b6.jpeg" onclick="openModal(this)">
+    <h3>Crossbody bag</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+</section>
+
+<!-- ===== SHOES ===== -->
+<h2 class="category-title moving-text">SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   SHOES   </h2>
+
+<section class="product-grid">
+
+  <div class="product" data-name="Retro slick sneakers" data-description="Retro slick sneakers blend classic old-school vibes with a clean, modern finish. Inspired by vintage designs, they feature smooth lines, bold accents, and a timeless look that pairs easily with both casual and streetwear styles. Comfortable, stylish, and effortlessly cool—these sneakers bring the past back with a fresh twist. 👟✨."data-price="40">
+    <img src="Image/shoes/s1 (2).jpeg" onclick="openModal(this)">
+    <h3>Retro slick sneakers</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Oliver Cabell shoes" data-description="**Oliver Cabell** is a modern footwear brand known for clean, minimalist sneakers crafted with premium materials. Inspired by European design, their shoes focus on timeless style, comfort, and quality—no loud logos, just sleek silhouettes that work for everyday wear and smart-casual looks. 👟✨." data-price="50">
+    <img src="Image/shoes/s1.jpeg" onclick="openModal(this)">
+    <h3>Oliver Cabell</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Aldo shoes" data-description="**ALDO heels** are known for their trendy designs, elegant silhouettes, and accessible fashion-forward style. They combine modern details with comfort-focused construction, making them perfect for both everyday wear and special occasions. Chic, confident, and easy to style—ALDO heels are made to elevate any outfit 👠✨." data-price="30">
+    <img src="Image/shoes/s2.jpeg" onclick="openModal(this)">
+    <h3>Aldo</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Aldo Heron Lace shoes" data-description="**Classic black leather sneakers** offer a timeless, versatile style with a clean and polished look. Made from smooth leather, they pair effortlessly with casual, smart-casual, or even semi-formal outfits. Simple, durable, and always in style—these sneakers are a wardrobe essential. 👟🖤" data-price="45">
+    <img src="Image/shoes/s3.jpg" onclick="openModal(this)">
+    <h3>Aldo</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="classic heels" data-description="**Classic heels** embody timeless elegance with clean lines and a refined silhouette. Designed to complement both formal and everyday looks, they offer versatile style, lasting comfort, and effortless sophistication—an essential staple for any wardrobe. 👠✨" data-price="40">
+    <img src="Image/shoes/s4.jpeg" onclick="openModal(this)">
+    <h3>Classic heels</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Adidas" data-description="**Adidas black sneakers** combine sporty style with everyday comfort. Featuring a sleek black design and iconic Adidas details, they’re versatile, durable, and easy to pair with any outfit—from casual wear to street style. Clean, classic, and always on trend. 👟🖤." data-price="40">
+    <img src="Image/shoes/s5.jpg" onclick="openModal(this)">
+    <h3>Adidas black Sneakers</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="white pump heels" data-description="**Elegant white pump heels** exude timeless sophistication with a clean, graceful silhouette. Designed to elevate both formal and special-occasion looks, they offer a refined finish, classic charm, and confident style in every step. 👠🤍." data-price="40">
+    <img src="Image/shoes/s6.jpeg" onclick="openModal(this)">
+    <h3>White pump heels</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+<div class="product" data-name="Puma" data-description="**Puma black sneakers** deliver a sleek, sporty look with all-day comfort. Designed for versatility, they feature a clean black finish with iconic Puma detailing—perfect for casual wear, street style, or light athletic use. Stylish, durable, and effortlessly cool. 👟🖤" data-price="40">
+    <img src="Image/shoes/s7.jpeg" onclick="openModal(this)">
+    <h3>Puma</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+<div class="product" data-name="Aldo sandals" data-description="**ALDO sandals** combine modern design with effortless comfort. Featuring stylish straps, sleek finishes, and versatile silhouettes, they’re perfect for both casual days and dressy occasions. Chic, lightweight, and easy to wear—ideal for elevating any warm-weather look. 👡✨" data-price="30">
+    <img src="Image/shoes/s8.jpeg" onclick="openModal(this)">
+    <h3>Aldo Sandals</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+</section>
+
+<!-- ===== CLOTHES ===== -->
+<h2 class="category-title moving-text">CLOTES         CLOTHES       CLOTHES      CLOTHES      CLOTHES      CLOTHES     CLOTHES      CLOTHES     CLOTHES       CLOTHES     CLOTHES     CLOTHES      CLOTHES       CLOTHES       CLOTHES       CLOTHES      CLOTHES      CLOTHES   CLOTHES   CLOTHES   </h2>
+
+<section class="product-grid">
+
+  <div class="product" data-name="Puma" data-description="Elegant Custom Blue Dress Step into sophistication with this beautifully tailored custom blue dress, designed to perfectly complement your style. Crafted from high-quality, soft, and breathable fabric, it offers a comfortable fit while enhancing your silhouette. The dress features a flattering neckline, a cinched waist, and flowing lines that create graceful movement. Ideal for special occasions, evening events, or casual elegance, this custom piece can be personalized in length, sleeve style, and detailing to match your unique taste. Make a statement with timeless elegance in a shade of blue that exudes confidence and charm." data-price="55">
+    <img src="Image/clothes/c1.jpg" onclick="openModal(this)">
+    <h3>Custom Dress</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Puma" data-description="Elegant Custom Long-Sleeve Blue Dress Elevate your wardrobe with this stunning custom long-sleeve blue dress, designed to combine elegance and comfort. Made from soft, high-quality fabric, it drapes beautifully while offering a flattering silhouette. The long sleeves add a touch of sophistication, while the tailored waist and flowing skirt create graceful movement. Perfect for formal events, evening occasions, or refined everyday style, this dress can be customized in length, neckline, and detailing to suit your personal taste. Timeless, chic, and confidently blue—your ideal custom piece awaits."data-price="70">
+    <img src="Image/clothes/c2.jpg" onclick="openModal(this)">
+    <h3>Long Sleeve</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+  <div class="product" data-name="Puma" data-description="Aviana Jumpsuit – Aqua Green Make a statement with the Aviana Jumpsuit in a fresh, vibrant aqua green. Designed for effortless elegance, this jumpsuit features a tailored fit that flatters every silhouette, a cinched waist for added definition, and flowing pant legs for comfort and movement. The sleeveless design and soft, breathable fabric make it perfect for daytime outings, evening events, or casual chic occasions. Versatile and stylish, the Aviana Jumpsuit in aqua green is a must-have for a wardrobe that blends sophistication with a pop of refreshing color." data-price="65">
+    <img src="Image/clothes/c3.jpeg" onclick="openModal(this)">
+    <h3>Aviana Jumpsuit- aqua green</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+
+   <div class="product" data-name="Puma" data-description="Embrace the freshness of spring with this charming floral jumpsuit. Designed with a flattering silhouette, it features a cinched waist, wide or flowing legs for comfort, and a vibrant floral print that celebrates the season. Crafted from soft, breathable fabric, this jumpsuit is perfect for daytime outings, brunches, garden parties, or casual events where style meets ease. Lightweight, feminine, and effortlessly chic, it’s your go-to piece for a playful yet elegant spring look." data-price="55">
+    <img src="Image/clothes/c4.jpg" onclick="openModal(this)">
+    <h3>Spring floral jumpsuit</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+   <div class="product" data-name="Puma" data-description="Stay effortlessly stylish and comfortable with the Alo T-Shirt. Crafted from soft, breathable fabric, this T-shirt offers a relaxed fit that moves with you, making it perfect for everyday wear, casual outings, or layering under jackets and hoodies. Featuring a minimalist design with a subtle logo, the Alo T-Shirt combines modern simplicity with timeless versatility—an essential piece for any wardrobe."data-price="20">
+    <img src="Image/clothes/c5.jpg" onclick="openModal(this)">
+    <h3>T-Shirt</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+
+  </div>
+   <div class="product" data-name="Puma" data-description=" Upgrade your everyday wardrobe with this comfortable and versatile women’s T-shirt. Made from soft, breathable fabric, it offers a relaxed yet flattering fit, perfect for casual outings, layering, or lounging at home. With a timeless design and attention to detail, this T-shirt pairs effortlessly with jeans, skirts, or shorts, making it a staple piece for effortless style and everyday comfort."data-price="25">
+    <img src="Image/clothes/c6.jpeg" onclick="openModal(this)">
+    <h3>T-Shirt</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+   <div class="product" data-name="Puma" data-description="H&M Winter Jacket Stay warm and stylish this season with the H&M Winter Jacket. Designed to protect against cold weather, this jacket features a cozy insulated lining, a durable outer shell, and a comfortable fit for all-day wear. With practical details like a zip closure, adjustable hood, and pockets for convenience, it combines functionality with modern style. Perfect for winter outings, city adventures, or casual layering, the H&M Winter Jacket is your go-to piece for warmth, comfort, and effortless winter fashion."data-price="70">
+    <img src="Image/clothes/c7.jpeg" onclick="openModal(this)">
+    <h3>H&M Winter jacket</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+   <div class="product" data-name="jacket" data-description=" Jacket Gear up in style and comfort with this versatile sport jacket. Designed for active lifestyles, it features lightweight, breathable fabric that allows for easy movement while keeping you warm and protected. With a modern fit, zip closure, and practical pockets, this jacket is perfect for workouts, outdoor activities, or casual everyday wear. Sleek, functional, and stylish, it’s the ultimate companion for staying active without compromising on fashion."data-price="35">
+    <img src="Image/clothes/c8.jpeg" onclick="openModal(this)">
+    <h3>Sport Jacket</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+   <div class="product" data-name="T-Shirt" data-description="The Bomber Jacket Add a timeless edge to your wardrobe with The Bomber Jacket. Crafted with durable fabric and a comfortable fit, this jacket features a classic ribbed collar, cuffs, and hem, along with a zip-front closure for easy wear. Designed for versatility, it pairs effortlessly with jeans, trousers, or casual outfits, making it perfect for day-to-day wear or a night out. Sleek, stylish, and effortlessly cool, The Bomber Jacket is a must-have staple for every modern wardrobe."data-price="20">
+    <img src="Image/clothes/c9.jpeg" onclick="openModal(this)">
+    <h3>The Boomber Jacket</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+   <div class="product" data-name="T-Shirt" data-description="Combine sporty style with everyday comfort in this Women’s Polo Jacket. Made from soft, breathable fabric, it offers a flattering fit with a zip or button-up front, ribbed cuffs, and a stylish collar. Perfect for casual outings, light workouts, or layering over your favorite outfits, this jacket blends functionality with modern fashion. Sleek, versatile, and effortlessly chic, it’s a wardrobe essential for women who value both style and comfort."data-price="20">
+    <img src="Image/clothes/c10.jpeg" onclick="openModal(this)">
+    <h3>Women Polo jacket</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+</section>
+
+<!-- PANDORA -->
+ <h2 class="category-title moving-text">PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA   PANDORA  </h2>
+
+<section class="product-grid">
+
+  <div class="product" data-name="Bracelet" data-description="Elevate your jewelry collection with the 100% PANDORA 14k Gold Plated Charm Bracelet (model 563050C00), a stunning accessory that combines elegance and versatility. Crafted with a luxurious 14k gold plating, this bracelet features a sleek design and a secure heart-shaped clasp, perfect for showcasing your favorite charms or wearing alone for a timeless, sophisticated look. Its high-quality finish ensures lasting shine, making it an ideal gift for loved ones or a special treat for yourself. Perfect for everyday wear or special occasions, this bracelet adds a touch of glamour to any outfit."data-price="170">
+    <img src="Image/Bracelet/pandora1.jpg" onclick="openModal(this)">
+    <h3>Pandora</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="This 14k gold-plated pavé Cuban chain bracelet blends contemporary style with classic design. The pavé detailing adds a layer of texture to the bracelet's bold, interlocking chain design, enhancing its visual appeal without overwhelming its clean, structured silhouette. The bracelet features a sleek clasp engraved with the Pandora logo, ensuring both security and a seamless finish. Its striking appearance makes it ideal for those who appreciate a modern twist on a timeless design."data-price="199">
+    <img src="Image/Bracelet/pandora2.jpg" onclick="openModal(this)">
+    <h3>gold-plated pavé Cuban</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="Update your collection with our new Pandora Moments Studded Chain Bracelet in a 14k gold-plated unique metal blend. This hand-finished bracelet features a flexible, textured chain and an infinity-detailed openable heart-shaped clasp with an interior infinity symbol. Please note this chain bracelet does not have threaders (raised charm dividers). A maximum of 14-18 charms or dangle charms can be styled on the bracelet. The clasp cannot be styled with charms. We recommend adding charms with silicone grips or safety chains to secure your styling."data-price="129">
+    <img src="Image/Bracelet/pandora3.jpg" onclick="openModal(this)">
+    <h3>Bracelet</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="Update your collection with our new Pandora Moments Studded Chain Bracelet in a 14k gold-plated unique metal blend. This hand-finished bracelet features a flexible, textured chain and an infinity-detailed openable heart-shaped clasp with an interior infinity symbol. Please note this chain bracelet does not have threaders (raised charm dividers). A maximum of 14-18 charms or dangle charms can be styled on the bracelet. The clasp cannot be styled with charms. We recommend adding charms with silicone grips or safety chains to secure your styling."data-price="2530">
+    <img src="Image/Bracelet/pandora4.jpg" onclick="openModal(this)">
+    <h3>Chain Bracele</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="PANDORA Moments Heart Clasp Snake Chain Bracelet - Charm Bracelet - Compatible with PANDORA Moments Charms - Mother's Day Gift with Gift Box." data-price="140">
+    <img src="Image/Bracelet/pandora5.jpg" onclick="openModal(this)">
+    <h3>Snake Chain Bracelet</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="PANDORA's classic, patented sterling silver charm bracelet is given an added romantic touch from a heart-shaped clasp. This is the perfect bracelet for a charm collection that symbolizes those unforgettable moments with your loved one. "data-price="80">
+    <img src="Image/Bracelet/pandora6.jpg" onclick="openModal(this)">
+    <h3>classic, patented sterling silver</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="New 100% Authentic PANDORA Rose Gold Encircled Clasp Bangle Bracelet 583230C01." data-price="140">
+    <img src="Image/Bracelet/panndora7.jpg" onclick="openModal(this)">
+    <h3>Rose Gold Encircled </h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="Authentic Pandora (19CM) Signature Crown Chain Bracelet, Rose Gold." data-price="90">
+    <img src="Image/Bracelet/pandora8.jpg" onclick="openModal(this)">
+    <h3>Crown Chain Bracelet</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="BRAND NEW DESIGN Pandora Moments Round Clasp 14k Gold Plated Bracelet 564028C00."data-price="165">
+    <img src="Image/Bracelet/pandora9.jpg" onclick="openModal(this)">
+    <h3>Gold Plated Bracelet</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="NEW AUTHENTIC PANDORA Beads & Pavé Bracelet 14k rose gold plating." data-price="210">
+    <img src="Image/Bracelet/pandora10.jpg" onclick="openModal(this)">
+    <h3>Beads & Pavé Bracelet</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="Sterling Silver Rose Gold-plated Cubic Zirconia Station Bracelet 7.25" data-price="216">
+    <img src="Image/Bracelet/pandora11.jpg" onclick="openModal(this)">
+    <h3>Rose Gold-plated</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+    <div class="product" data-name="Bracelet" data-description="*BRAND NEW* 925 Sterling Silver Rhodium-plated CZ Halo Adjustable Bracelet" data-price="199">
+    <img src="Image/Bracelet/pandora12.jpg" onclick="openModal(this)">
+    <h3>Sterling Silver</h3>
+    <div class="rating">★★★★☆</div>
+    <input type="number" class="quantity" min="1" value="1">
+    <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+    <button class="buy-now" onclick="buyNow(this)">Buy Now</button>
+  </div>
+</section>
+
+<!-- CART -->
+ <div id="cartContainer">
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Benzo Wailili Shop</h3>
+      <p>Local online shopping platform in Timor-Leste.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📞 Phone: +670 75700391</p>
+      <p>✉ Email: benzowailili@gmail.com</p>
+      <p>Instagram: 
+        <a href="https://www.instagram.com/boss_benzo10/" target="_blank">boss_benzo10</a>, 
+        <a href="https://www.instagram.com/benzo_uaililiofficial/" target="_blank">benzo_uaililiofficial</a>
+      </p>
+    </div>
+    <div class="footer-section">
+      <h3>Location</h3>
+      <p>📍 Dili, Timor-Leste</p>
+    </div>
+  </div>
+
+  <div>
+    <a href="contact.html" class="contact-btn">Contact Us</a>
+  </div>
+
+  <div class="footer-payment">
+  <h3>Payment Methods</h3>
+  <div class="payment-logos">
+    <img src="Image/payment.png" alt="Payment">
+     <img src="Image/ABA.jpg" alt="Payment">
+
+  <div class="footer-bottom">
+    <p>© 2026 Benzo Wailili Shop. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="">
+    <h3 id="modalName"></h3>
+    <p id="modalDesc"></p>
+    <p>Price: $<span id="modalPrice"></span></p>
+    <label>Quantity:</label>
+    <input type="number" id="modalQuantity" min="1" value="1">
+    <div>
+      <button class="add-to-cart" onclick="addToCartModal()">Add to Cart</button>
+      <button class="buy-now" onclick="buyNowModal()">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

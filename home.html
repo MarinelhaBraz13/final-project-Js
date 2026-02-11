@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SimpleShop - Home</title>
+ <link rel="icon" href="Image/logos.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="brand">
+    <img src="Image/logos.png" alt="Shop Logo">
+    <span class="shop-name">Benzo Uailili Shop</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="product.html">Products</a></li>
+    <li><a href="about us.html">About Us</a></li>
+    <li><a href="index.html">Login</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Benzo Uailili Online shopping</h1>
+    <p>Elegant, modern, and made just for you</p>
+  </div>
+  <div class="hero-img">
+    <img src="Image/back.jpg" alt="hero image">
+    <!-- kamu ganti fotonya -->
+  </div>
+</section>
+
+<!-- ===== FEATURED PRODUCTS (HOME) ===== -->
+<h2 class="category-title moving-text">Featured Products          Featured Products          Featured Products          Featured Products          Featured Products          Featured Products          Featured Products          Featured Products          </h2>
+
+<section class="product-grid">
+
+<div class="product" data-name="Bags" data-description="Coach bags are known for their timeless design, high-quality materials, and excellent craftsmanship. Made from premium leather and durable fabrics, Coach bags combine elegance with everyday functionality. They are designed to suit various occasions, from casual daily use to formal events, offering both style and practicality.
+Coach bags feature well-organized compartments, strong stitching, and iconic branding, making them a popular choice for customers who value luxury, durability, and classic fashion." data-price="120">
+    <img src="Image/bags/bags.jpeg" onclick="openModal(this)">
+    <h3>Coach</h3>
+    <div class="rating">★★★★☆</div>
+  </div>
+
+<div class="product" data-name="Shoes" data-description="Our shoes collection offers a perfect blend of style, comfort, and durability. Made from high-quality materials, each pair is designed to provide support and long-lasting wear.
+From casual sneakers to elegant heels, our shoes are versatile for everyday activities, work, or special occasions. With sleek designs and attention to detail, they elevate any outfit while keeping your feet comfortable all day." data-price="120">
+    <img src="Image/shoes/shoes.jpg" onclick="openModal(this)">
+    <h3>New Balance</h3>
+    <div class="rating">★★★★☆</div>
+  </div>
+
+<div class="product" data-name="Clothes" data-description="Our clothing collection combines style, comfort, and quality for every occasion. Made from soft, breathable fabrics, each piece is designed to provide a flattering fit and ease of movement.
+From casual T-shirts and jackets to elegant dresses and jumpsuits, our clothes are versatile and stylish, perfect for daily wear, special events, or seasonal fashion. With attention to detail and modern designs, they help you look confident and feel comfortable all day." data-price="60">
+    <img src="Image/clothes/Jumpsuit.jpg" onclick="openModal(this)">
+    <h3>Jumpsuit</h3>
+    <div class="rating">★★★★☆</div>
+  </div>
+
+  <div class="product" data-name="Bracelet" data-description="*BRAND NEW* 925 Sterling Silver Rhodium-plated CZ Halo Adjustable Bracelet." data-price="199">
+    <img src="Image/Bracelet/pandora13.jpg" onclick="openModal(this)">
+    <h3>Sterling Silver Rhodium-plated </h3>
+    <div class="rating">★★★★☆</div>
+  </div>
+</section>
+<div id="cartContainer"></div>
+
+<section class="home">
+  <p><h2>Find the best products at the best prices.</h2></p>
+  <a href="product.html" class="btn">View Products</a>
+</section>
+
+
+<footer id="footer">
+  <div class="footer-content">
+
+    <div class="footer-section">
+      <h3>Benzo Wailili Shop</h3>
+      <p>Local online shopping platform in Timor-Leste.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📞 Phone: +670 75700391</p>
+      <p>✉ Email: benzowailili@gmail.com</p>
+      <p>Instragram page: https://www.instagram.com/boss_benzo10/ and https://www.instagram.com/benzo_uaililiofficial/</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Location</h3>
+      <p>📍 Dili, Timor-Leste</p>
+    </div>
+
+  </div>
+  <div><a href="contact.html" class="contact-btn">
+    Contact Us
+  </a>
+</div>
+
+  <div class="footer-payment">
+  <h3>Payment Methods</h3>
+  <div class="payment-logos">
+    <img src="Image/payment.png" alt="Payment">
+     <img src="Image/ABA.jpg" alt="Payment">
+
+       <div class="footer-bottom">
+    <p>© 2026 Benzo Wailili Shop. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+  function logout() {
+  localStorage.removeItem("isLoggedIn");
+  window.location.href = "login.html";
+}
+</script>
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg">
+    <h3 id="modalName"></h3>
+    <p id="modalDesc"></p>
+    <p>Price: $<span id="modalPrice"></span></p>
+    <label>Quantity:</label>
+    <input type="number" id="modalQuantity" min="1" value="1">
+    <br><br>
+    <button class="add-to-cart" onclick="addToCartModal()">Add to Cart</button>
+    <button class="buy-now" onclick="buyNowModal()">Buy Now</button>
+  </div>
+</div>
+
+</body>
+</html>
